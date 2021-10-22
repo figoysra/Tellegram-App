@@ -1,0 +1,48 @@
+.bgLoginRegister{
+    background-color: #F6F6F6;
+    font-family: rubik;
+}
+
+.borderLogin {
+    border-radius: 20px;
+}
+.borderLogin .loginTitle{
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+.borderLogin .loginInput {
+    width: 350px;
+}
+.buttonLogin {
+    width: 350px !important;
+    background-color: #7E98DF !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+}
+.googleButton{
+    background-color: #F6F6F6 !important;
+    border: 1px solid #7E98DF !important;
+    border-radius: 10px !important;
+    width: 350px !important;
+    color: #7E98DF !important;
+    border-radius: 20px !important;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px !important;
+}
+.textLightBlue{
+    color: #7E98DF;
+}
+
+.textGray{
+    color: #848484;
+}
+@media screen and (max-width:576px){
+    .borderLogin{
+        height: 100vh;
+    }
+}

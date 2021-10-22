@@ -1,0 +1,29 @@
+.borderSignUp{
+    border-radius: 20px;
+}
+.signUpTitle{
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.signUpInput{
+    width: 350px;
+}
+.signUpButton{
+    width: 350px !important;
+    background-color: #7E98DF !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+}
+.pointer{
+    cursor: pointer;
+}
+.iconBack{
+    width: 20px !important;
+    height: 20px !important;
+}
+@media screen and (max-width:576px) {
+    .borderSignUp{
+        height: 100vh;
+    }
+}

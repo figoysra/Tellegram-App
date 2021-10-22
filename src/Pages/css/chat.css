@@ -1,0 +1,241 @@
+.chat{
+    font-family: rubik;
+    border-right: 1px solid #E5E5E5;
+    min-height: 100vh;
+    /* overflow-y: scroll; */
+    background-color: #FFFFFF;
+}
+.contact {
+    cursor: pointer;
+}
+.chatTittle{
+    font-size: 22px ;
+}
+.contactProfile{
+    width: 20%;
+}
+.toogleTelegram{
+    background-color: white !important;
+    color: black;
+    border: none !important;
+}
+.toogleIcon{
+    width: 25px;
+    height: 25px;
+}
+.dropdownOption{
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 10px !important;
+    background-color: #7E98DF !important;
+    /* color: white !important; */
+}
+
+.borderPicture{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    border-radius: 15px;
+    object-fit: cover;
+    position: relative;
+}
+.borderPicture img{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    /* z-index: 0px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactBody{
+    width: 80%;
+}
+.contactTittle{
+    font-size: 18px;
+}
+.contactTag{
+    font-size: 12px;
+}
+.bgGray{
+    background-color: #FAFAFA;
+}
+.listChat{
+    margin-top: 2px;
+    position: relative;
+    /* margin-bottom: 40px; */
+    min-height: 550px;
+    max-height: 550px;
+    z-index: 1;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.borderListPicture{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+}
+.borderListPicture img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.chatListTittle{
+    font-size: 20px;
+}
+.sendMessage{
+    position: absolute;
+    /* background-color: red !important; */
+    bottom: 0px;
+    width: 75%;
+    /* margin-bottom: 20px; */
+    z-index: 2;
+}
+.inputSend{
+    border: none;
+    background-color: #E5E5E5;
+    width: 90% !important;
+}
+.sendMessageButton{
+    border: none;
+    /* background-color: #7E98DF; */
+}
+.iconSendMessage{
+    height: 30px;
+    color: #7E98DF;
+    width: auto;
+}
+
+
+.borderMessagePicture{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+}
+.borderMessagePicture img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chatMessageTextLeft {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    max-width: 400px;
+    min-width: 50px;
+    word-wrap: break-word;
+}
+.chatMessageTextRight{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 400px;
+    min-width: 50px;
+    word-wrap: break-word;
+    
+}
+
+
+
+.inputSendMessage{
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: #dadada;
+    /* font-weight: bold; */
+}
+.border{
+    border: 1px solid green;
+}
+.textDarkGray{
+    color: #848484;
+}
+.bgdarkGray{
+    background-color: #dadada;
+}
+.bgWhite{
+    background-color: #FFFFFF;
+}
+.bgLightBlue{
+    background-color: #7E98DF;
+}
+.rubik{
+    font-family: rubik;
+}
+
+.sideBarProfile{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.fs20{
+    font-size: 20px;
+}
+.iconLeft{
+    width: 10%
+}
+.profileUpdate{
+    width: 90%;
+}
+.profilePictureUpdate{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    border-radius: 25px;
+    object-fit: cover;
+    position: relative;
+}
+.profilePictureUpdate img{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inputBoxUpdate{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.inputBoxTextArea{
+    resize: none;
+    width: 200px;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.btnSave{
+    background-color: #7E98DF !important;
+}
+.iconLeft{
+    width: 20px;
+    height: 20px;
+    color: #7E98DF;
+    cursor: pointer;
+    /* padding-left: 20px; */
+}
