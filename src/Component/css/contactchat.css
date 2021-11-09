@@ -1,0 +1,20 @@
+.componentChat{
+    width: 30%;
+    position: absolute;
+    z-index: 10;
+}
+
+.chat {
+    font-family: rubik;
+    border-right: 1px solid #E5E5E5;
+    min-height: 100vh;
+    /* overflow-y: scroll; */
+    background-color: #FFFFFF;
+}
+.contact {
+    cursor: pointer;
+}
+
+.chatTittle {
+    font-size: 22px;
+}

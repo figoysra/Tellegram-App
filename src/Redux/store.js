@@ -2,10 +2,12 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
 import usersReducer from "./reducers/users";
-import { reducer as formReducer } from "redux-form"
+import chatReducer from "./reducers/chat"
+// import { reducer as formReducer } from "redux-form"
 
 const reducers = combineReducers({
     users : usersReducer,
+    chats : chatReducer 
     // form : formReducer
 });
 

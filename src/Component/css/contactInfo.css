@@ -1,0 +1,22 @@
+.widthContact{
+    width: 30%;
+    height: 100vh ;
+    overflow-y: scroll;
+    background-color: white;
+    position: absolute;
+    z-index: 200;
+}
+.bgButtonEdit{
+    background-color: #7E98DF !important;
+}
+.textAreaUpdata{
+    width: 100%;
+}
+.inputFile{
+}
+
+@media (max-width: 575.98px) {
+    .widthContact{
+        width: 100%;
+    }
+}

@@ -5,9 +5,10 @@ export const LOGIN = (form) => {
     return new Promise((resolve, reject)=>{
         axios.post(`${API_URL}login`, form)
         .then((response)=>{
-            console.log(response.data)
-            resolve(response.data)
-            localStorage.setItem('token', response.data.result.token)
+            // console.log(response.data.token)
+            resolve(response.data.token)
+            localStorage.setItem('token', response.data.token)
+            localStorage.setItem("id", response.data.result.id);
         }).catch((err)=>{
             reject(err.response.data)
         })
@@ -15,14 +16,10 @@ export const LOGIN = (form) => {
 }
 
 
-
 export const REGISTER = (form) =>{
     return new Promise((resolve, reject)=>{
         // console.log(form)
-        const headers = {
-            "Content-Type": "multipart/form-data",
-        };
-        axios.post(`${API_URL}register`, form, {headers})
+        axios.post(`${API_URL}register`, form,)
         .then((response)=>{
             resolve(response.data)
         }).catch((err)=>{
@@ -51,16 +48,16 @@ export const GET_USERS = () =>{
             });
     }
 }
-export const GET_DATA_USER = (token) =>{
+export const GET_DATA_USER = () =>{
     return (dispatch)=>{
+        const token = localStorage.getItem("token")
         const headers = {
-            "Content-Type": "multipart/form-data",
             "token": token,
         };
         dispatch(getDataUserPending)
         axios.get(`${API_URL}users`, { headers })
         .then((response)=>{
-            dispatch(getDataUserFulfilled(response.data.result[0]))
+            dispatch(getDataUserFulfilled(response.data.result))
         }).catch((err)=>{
             dispatch(getDataUserRejected(err.response.data));
         })
@@ -74,6 +71,21 @@ export const UPDATE_USER = (form) =>{
             "token" : localStorage.getItem("token")
         }
         axios.put(`${API_URL}users`, form, {headers})
+        .then((response)=>{
+        
+            resolve(response.data)
+        }).catch((err)=>{
+            reject(err.response.data)
+        })
+    })
+}
+export const UPDATE_STATUS = (form) =>{
+    return new Promise((resolve, reject)=>{
+        // console.log(form)
+        const headers = {
+            "token" : localStorage.getItem("token")
+        }
+        axios.put(`${API_URL}updateStatus`, form, {headers})
         .then((response)=>{
             resolve(response.data)
         }).catch((err)=>{
@@ -94,6 +106,30 @@ export const FORGET_PASSWORD = (email)=>{
             reject(err.response.data)
         })
     })
+}
+
+export const GETRECEIVERPROFILE = (id) =>{
+    return(dispatch) =>{
+         dispatch({
+            type : 'GET_RECEIVER_PROFILE_PENDING'
+        })
+        const headers = {
+            "token" : localStorage.getItem("token")
+        }
+       
+        axios.get(`${API_URL}receiverData/${id}`, { headers })
+        .then((response)=>{
+            dispatch({
+                type: "GET_RECEIVER_PROFILE_FULLFILLED",
+                payload : response.data.result
+            })
+        }).catch((err)=>{
+            dispatch({
+                type: 'GET_RECEIVER_PROFILE_REJECTED ',
+                payload: err.response.data
+            });
+        })
+    }
 }
 
 

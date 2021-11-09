@@ -6,7 +6,11 @@ const initialState = {
     dataUser: {},
     loadDataUser: false,
     errorDataUser: false,
-    errorDataUserMessage : ''
+    errorDataUserMessage : '',
+    receiverData : {},
+    loadreceiverData: false,
+    errorreceiverData: false,
+    errorreceiverDataMSG: "",
 }
 
 const usersReducer = ( state=initialState, action)=>{
@@ -24,6 +28,14 @@ const usersReducer = ( state=initialState, action)=>{
             return{...state, loadDataUser: false, dataUser: action.payload}
         case "GET_DATA_USER_REJECTED":
             return { ...state, loadDataUser: false, errorDataUser: true, errorDataUserMessage: action.payload };
+
+        case 'GET_RECEIVER_PROFILE_PENDING' :
+            return { ...state, loadreceiverData: true };
+        case 'GET_RECEIVER_PROFILE_FULLFILLED' :
+            return {...state, loadreceiverData: false, receiverData : action.payload}
+        case 'GET_RECEIVER_PROFILE_REJECTED' :
+            return { ...state, loadreceiverData: false, errorreceiverData: true, errorreceiverDataMSG : action.payload};
+        
         default:
             return state;
     }

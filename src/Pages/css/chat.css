@@ -8,11 +8,26 @@
 .contact {
     cursor: pointer;
 }
+.componentChat {
+    width: 30%;
+    position: absolute;
+    z-index: 10;
+}
 .chatTittle{
     font-size: 22px ;
 }
+.chatlistComponent{
+    width: 70%;
+}
+.sidebarComponent{
+    width: 30%;
+    background-color: #7E98DF;
+}
 .contactProfile{
     width: 20%;
+}
+.searchContact {
+    width: 80%;
 }
 .toogleTelegram{
     background-color: white !important;
@@ -63,14 +78,11 @@
     background-color: #FAFAFA;
 }
 .listChat{
-    margin-top: 2px;
     position: relative;
     /* margin-bottom: 40px; */
-    min-height: 550px;
-    max-height: 550px;
+    height: 80%;
     z-index: 1;
     overflow-y: scroll;
-    height: 100vh;
 }
 .borderListPicture{
     width: 40px;
@@ -89,16 +101,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.navbarContact{
+    height: 10%;
+    display: flex;
+}
+
+
+
 .chatListTittle{
     font-size: 20px;
 }
 .sendMessage{
-    position: absolute;
-    /* background-color: red !important; */
-    bottom: 0px;
-    width: 75%;
-    /* margin-bottom: 20px; */
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
 }
 .inputSend{
     border: none;
@@ -151,8 +170,18 @@
     max-width: 400px;
     min-width: 50px;
     word-wrap: break-word;
+    cursor: pointer;
     
 }
+.iconDelete {
+    font-size: 80px;
+}
+.btnCancel{
+    background-color: white !important;
+    color: red !important;
+    border: 2px solid red !important;
+}
+
 
 
 
@@ -238,4 +267,48 @@
     color: #7E98DF;
     cursor: pointer;
     /* padding-left: 20px; */
+}
+
+.status{
+    color: #848484;
+    font-size: 12px;
+    font-style: italic;
+}
+.active{
+    display: none;
+}
+@media (max-width: 575.98px) {
+    .sidebarComponent{
+        width: 100%;
+    }
+    .componentChat {
+        width: 100%;
+    }
+    .chatlistComponent{
+        width: 100%;
+        position: absolute;
+    }
+    .chatListNone{
+        display: none;
+    }
+    .chatListActive{
+        position: absolute;
+        z-index: 11;
+    }
+    .navbarContact{
+        height: 10%;
+        display: flex !important;
+    }
+    .sendMessage{
+        width: 100% !important;
+    }
+    .inputSendMessage{
+        width: 80%;
+    }
+    .active{
+        display: block;
+        font-size: 25px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
 }
