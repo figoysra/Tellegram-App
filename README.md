@@ -11,7 +11,7 @@
   <p align="center">
     React JS TELEGRAM Realtime App
     <br />
-    <a href="https://github.com/figoysra/week20Repo.git"><strong>Explore API »</strong></a>
+    <a href="https://github.com/figoysra/TellegramApp-Repo"><strong>Explore API »</strong></a>
     <br />
     ·
     <a href="https://github.com/figoysra/Tellegram-App/issues">Report Bug</a>
