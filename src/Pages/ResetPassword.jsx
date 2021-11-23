@@ -35,6 +35,7 @@ const ResetPassword = () => {
     useEffect(()=>{
         getDataUser()
         localStorage.setItem("token", token);   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     useEffect(()=>{

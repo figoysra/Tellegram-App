@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/figoysra/Tellegram-App.git">
+  </a>
 
-## Available Scripts
+<h3 align="center">TELEGRAM APP</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    React JS TELEGRAM Realtime App
+    <br />
+    <a href="https://github.com/figoysra/week20Repo.git"><strong>Explore API »</strong></a>
+    <br />
+    ·
+    <a href="https://github.com/figoysra/Tellegram-App/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/figoysra/Tellegram-App/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#screenshot">Screenshot</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot](./ReadmeImage/tuxpi.com.1637588205.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Telegram app is a realtime chat app built using react for front end and express js, socket io, MYSQL for backend. The application can send messages to fellow contacts, delete messages and update the profile of the user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built With
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [React.js](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Reactstrap](https://reactstrap.github.io/)
+* [Bootstrap](https://getbootstrap.com/)
+* [MUI](https://mui.com/)
+* [Axios](https://www.npmjs.com/package/axios)
+* [Socket io](https://socket.io/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- GETTING STARTED -->
+## Getting Started
 
-### Analyzing the Bundle Size
+**Login as Raka** </br>
+Email : raka@email.com </br>
+Password : 12345 </br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Login as User** </br>
+Email : user@email.com </br>
+Password : 12345
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Clone the repo
+   ```sh
+   git clone https://github.com/figoysra/week20.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the Application
+   ```js
+   npm start;
+   ```
 
-### Deployment
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ROADMAP -->
+## Screenshot
+
+
+Main View       |  Main View when Click User
+:-------------------------:|:-------------------------:
+![](./ReadmeImage/tuxpi.com.1637588205.jpg)  |  ![](./ReadmeImage/tuxpi.com.1637588393.jpg)
+
+Edit Profile         |  Delete Message
+:-------------------------:|:-------------------------:
+![](./ReadmeImage/tuxpi.com.1637588254.jpg)  |  ![](./ReadmeImage/tuxpi.com.1637588226.jpg)
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Figo Yusra  - [@instagram](https://www.instagram.com/figoyusra/) - figoyusra.133@gmail.com
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+

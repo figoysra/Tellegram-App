@@ -18,15 +18,15 @@ const Contactchat = ({idUser}) => {
     const history = useHistory();
     const chat = useSelector((store) => store.chats);
     const handleLogout = () => {
-        let today = new Date();
-        let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        let dateTime = date+' '+time;
-        const formData = {
-            isOnline : 2,
-            timeOnline: dateTime
-        }
-        UPDATE_STATUS(formData);
+        // let today = new Date();
+        // let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        // let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        // let dateTime = date+' '+time;
+        // const formData = {
+        //     isOnline : 2,
+        //     timeOnline: dateTime
+        // }
+        // UPDATE_STATUS(formData);
         localStorage.removeItem("token");
         localStorage.removeItem("id");
         history.push("/login");

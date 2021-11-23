@@ -5,11 +5,6 @@ const initialState = {
     senderReceiver: [],
     loadSenderReceiver: false,
 
-    contacts: [],
-    loadcontacts: false,
-    errorcontacts: false,
-    errorcontactInfo: "",
-
     historyMessage: [],
     loadhistoryMessage: false,
 
@@ -27,13 +22,6 @@ const chatReducer = ( state=initialState, action)=>{
             return { ...state, loadSenderReceiver: true };
         case "GET_SENDERRECEIVER_FULFILLED":
             return{...state, loadSenderReceiver: false, senderReceiver: action.payload}
-        
-        case 'GET_CONTACTS_PENDING':
-            return { ...state, loadcontacts: true };
-        case 'GET_CONTACTS_FULFILLED':
-            return { ...state, loadcontacts: false, contacts: action.payload };
-        case 'GET_CONTACTS_REJECTED':
-            return {...state, loadcontacts: false, errorcontacts: true, errorcontactInfo: action.payload}
 
         case 'GET_HISTORYMESSAGE_PENDING':
             return { ...state, loadhistoryMessage: true };

@@ -110,7 +110,7 @@ export const FORGET_PASSWORD = (email)=>{
 
 export const GETRECEIVERPROFILE = (id) =>{
     return(dispatch) =>{
-         dispatch({
+        dispatch({
             type : 'GET_RECEIVER_PROFILE_PENDING'
         })
         const headers = {

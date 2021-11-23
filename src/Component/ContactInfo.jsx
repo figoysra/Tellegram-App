@@ -2,7 +2,7 @@ import "./css/contactInfo.css"
 import { FaAngleLeft } from "react-icons/fa";
 import { API_URL } from "../Utils/constants";
 import { useState, useEffect } from "react";
-import { TextField, InputAdornment, FilledInput } from "@mui/material";
+import { TextField, InputAdornment } from "@mui/material";
 import { GET_DATA_USER, UPDATE_USER } from "../Redux/action/users";
 import { useDispatch } from "react-redux";
 
@@ -57,7 +57,7 @@ const ContactInfo = ({type, data}) =>{
         formData.append("numberPhone", form.numberPhone)
         UPDATE_USER(formData)
         .then((response)=>{
-            console.log(response)
+            // console.log(response)
             alert('Update User Success')
             dispatch(GET_DATA_USER())
         })
@@ -73,7 +73,7 @@ const ContactInfo = ({type, data}) =>{
                 <div className='widthContact'>
                     <div className="d-flex mt-4 mb-4 w-100 align-items-center rubik">
                         <div className="iconLeft d-flex justify-content-center center fs20 ms-3 fs20 ">
-                            <FaAngleLeft  />
+                            <FaAngleLeft   />
                         </div>
                         <h1 className="text-capitalize profileUpdate text-center textLightBlue fw-bold w-100 fs20 d-flex justify-content-center">{data.username}</h1>
                     </div>

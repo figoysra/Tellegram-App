@@ -34,14 +34,14 @@ export const USER_ONLINE = () =>{
     }
 }
 
-export const LISTMESSAGE = (id, receiver, msg) =>{
+export const LISTMESSAGE = (payload) =>{
+    return(
+        socket.emit("send-message", payload)
+    )
+}
+export const GETLISTMESSAGE = (payload) =>{
     return(dispatch)=>{
-        dispatch(getListMessagePending());
-        socket.emit("send-message", {
-            sender: id,
-            receiver,
-            msg,
-        });
+        dispatch(getListMessageFulfilled(payload));
     }
 }
 
@@ -133,15 +133,3 @@ const getHistoryFulfilled = (payload) =>{
 //     }
 // }
 
-const getContactsActivePending = () =>{
-    return{
-        type : "GET_LISTCONTACTACTIVE_PENDING"
-    }
-}
-
-const getContactsActiveFullfilled = (payload) =>{
-    return{
-        type : "GET_LISTCONTACTACTIVE_FULFILLED",
-        payload
-    }
-}
