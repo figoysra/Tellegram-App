@@ -10,7 +10,7 @@ export const LOGIN = (form) => {
             localStorage.setItem('token', response.data.token)
             localStorage.setItem("id", response.data.result.id);
         }).catch((err)=>{
-            reject(err.response.data)
+            reject(err.response)
         })
     })
 }
@@ -23,7 +23,7 @@ export const REGISTER = (form) =>{
         .then((response)=>{
             resolve(response.data)
         }).catch((err)=>{
-            reject(err.response.data)
+            reject(err.response)
         })
     })
 }
@@ -59,7 +59,7 @@ export const GET_DATA_USER = () =>{
         .then((response)=>{
             dispatch(getDataUserFulfilled(response.data.result))
         }).catch((err)=>{
-            dispatch(getDataUserRejected(err.response.data));
+            dispatch(getDataUserRejected(err));
         })
     }
 }
@@ -75,7 +75,7 @@ export const UPDATE_USER = (form) =>{
         
             resolve(response.data)
         }).catch((err)=>{
-            reject(err.response.data)
+            reject(err.response)
         })
     })
 }
@@ -103,7 +103,7 @@ export const FORGET_PASSWORD = (email)=>{
             resolve(response.data)
         }).catch((err)=>{
         // console.log(err.response.data)
-            reject(err.response.data)
+            reject(err.response)
         })
     })
 }
