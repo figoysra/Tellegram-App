@@ -28,6 +28,7 @@ const Chat = () =>{
     const [chatList, setChatList] = useState(false);
     const toogleBack = () => setChatList(false);
     const messagesEndRef = useRef(null);
+    // const [isOpen, setOpen] = useState(false);
     // const tooglechatList = () => setChatList(!chatList);
     const [SidebarOpen, setSidebarOpen] = useState(false);
     const toggleSidebar = () => setSidebarOpen((prevState) => !prevState);
@@ -150,12 +151,12 @@ const Chat = () =>{
                                 <div className="Nav d-flex p-3">
                                     <h1 className="textLightBlue fw-bold chatTittle d-flex  align-content-start w-50">Telegram</h1>
                                     <div className="d-flex justify-content-end w-50">
-                                        <Dropdown isopen={dropdownOpen} toggle={toggle}>
+                                        <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                                             <DropdownToggle className="toogleTelegram p-0">
                                                 <CgMenuRightAlt className="textLightBlue toogleIcon" />
                                             </DropdownToggle>
                                             <DropdownMenu className="mt-2 dropdownOption " right>
-                                                <DropdownItem className="text-white fs14 d-flex align-items-center mt-3" isOpen={SidebarOpen} onClick={toggleSidebar}>
+                                                <DropdownItem className="text-white fs14 d-flex align-items-center mt-3"  onClick={toggleSidebar}>
                                                     <AiOutlineSetting className="toogleIcon me-2" />Settings
                                                 </DropdownItem>
                                                 <DropdownItem className="text-white fs14 d-flex align-items-center mt-3">
